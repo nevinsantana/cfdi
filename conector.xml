@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sferp:ComprobanteFiscal
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:sferp='http://www.solucionfactible.com/sferp/conector/cfd'
+    xsi:schemaLocation='http://www.solucionfactible.com/sferp/conector/cfd https://solucionfactible.com/sferp/conector/ComprobanteFiscal.xsd'
+    fecha="2012-08-20T12:15:20" formaDePago="Pago en una sola exhibición"
+    condicionesDePago="30 días" estatus="vigente" folio="1508" serie="H" metodoDePago="Transferencia electrónica" numCtaPago="8581" subTotal="912.00" total="1012.32">
+    <sferp:Divisa codigoISO="USD" nombre="Dólar" tipoDeCambio="13.26"></sferp:Divisa>
+    <sferp:Notas>Esta es una factura de ejemplo</sferp:Notas>
+    <sferp:Receptor rfc="SPE050224KP7" nombre="Servicio de Pintura y Enderezado America S.A. de C.V." email="hramirez@hugesoft.org">
+        <sferp:Domicilio calle="Adolfo Lopez Mateos" noExterior="1522" noInterior="B" colonia="Prados Universidad"
+                         localidad="León" referencia="Frente a ITL" municipio="León" estado="Guanajuato" pais="México" codigoPostal="52036"/>
+    </sferp:Receptor>
+    <sferp:Embarque rfc="EMA990223M34" nombre="ETIQUETAS Y MARCAJES, SA DE CV" email="contacto@emarc.com">
+        <sferp:Domicilio calle="ITURBIDE" noExterior="2208" colonia="Postal"
+                         localidad="Nuevo Laredo" municipio="Nuevo Laredo" estado="Tamaulipas" pais="México" codigoPostal="88240"/>
+    </sferp:Embarque>
+    <sferp:Conceptos>
+        <sferp:Concepto cantidad="1.0" unidad="PZA" codigo="0X5476"
+                        concepto="ROLLO DE ETIQUETA 4 X 2&quot; T.T. BCA C/3,000 ETIQ"
+                        valorUnitario="456.00" tasaDescuentoUnitario="0.0" montoDescuentoUnitario="0.0" importe="912.00" comentario="Se empaca junto con otros productos en caja de 4x4">
+            <sferp:Impuestos>
+                <sferp:Impuesto tipo="traslado" tasa="11.00" impuesto="IVA" importe="100.32"/>
+            </sferp:Impuestos>
+            <sferp:CamposPersonalizados>
+                <sferp:CampoPersonalizado nombre="Lote" valor="AX319132"/>
+                <sferp:CampoPersonalizado nombre="NumeroDeParte" valor="X1524F19TT7"/>
+            </sferp:CamposPersonalizados>
+        </sferp:Concepto>
+    </sferp:Conceptos>
+    <sferp:TotalImpuestos>
+        <sferp:Impuesto tipo="traslado" tasa="11" impuesto="IVA" importe="100.32"/>
+    </sferp:TotalImpuestos>
+    <sferp:CamposPersonalizados>
+        <sferp:CampoPersonalizado nombre="NumeroDeCliente" valor="3219542020"/>
+        <sferp:CampoPersonalizado nombre="TelefonoCliente" valor="(425)254-1225"/>
+    </sferp:CamposPersonalizados>
+</sferp:ComprobanteFiscal>

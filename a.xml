@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" serie="B" folio="233387" fecha="$fecha_actual" sello="" total="705.1600" subTotal="610.2963" certificado="" formaDePago="PAGO EN UNA SOLA EXHIBICIÓN" metodoDePago="01" noCertificado="" LugarExpedicion="TLALNEPANTLA, ESTADO DE MEXICO, MEXICO" tipoDeComprobante="ingreso"> <cfdi:Emisor rfc="OSC9812101M5" nombre="OPERADORA SANTA CECILIA SA DE CV" >
+<cfdi:DomicilioFiscal calle="AV SANTA CECILIA" noExterior="290" colonia="SANTA CECILIA" localidad="SANTA CECILIA" municipio="TLALNEPANTLA" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="54130"/>
+<cfdi:ExpedidoEn calle="AV SANTA CECILIA" noExterior="290" colonia="SANTA CECILIA" municipio="TLALNEPANTLA" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="54130" />
+<cfdi:RegimenFiscal Regimen="PERSONA MORAL"/>
+</cfdi:Emisor>
+<cfdi:Receptor rfc="CARL9108217G3" nombre="CALLEJAS RODRIGUEZ LUIS EDUARDO" >
+<cfdi:Domicilio calle="DOMINICOS" noExterior="11" colonia="LOMAS DE SAN MIGUEL" municipio="ATIZAPAN DE ZARAGOZA" estado="ESTADO DE MEXICO" pais="MEXICO" codigoPostal="52928" />
+</cfdi:Receptor>
+<cfdi:Conceptos>
+<cfdi:Concepto cantidad="38.87" unidad="LITROS" descripcion="Combustible PREMIUM  CLV:32012 Comprobantes Simplificados (Transacciones): 0012752275" valorUnitario="15.6997" importe="610.2963"/>
+</cfdi:Conceptos>
+<cfdi:Impuestos totalImpuestosTrasladados="94.8637">
+<cfdi:Traslados>
+<cfdi:Traslado impuesto="IVA" tasa="16" importe="94.8637"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" selloCFD="TvrOyRKyQ1EdWXdXLEuhKKsM5XHmKWOX7aBV/mEBRBgQY3WaSmOMBPIQG6q6tB1SFjNo1ZLRaEWOpoDEiEY8n9T/f0Uap4HX3KqIR2vdsTIvnM//IftlAkS0JEw29HwD6MWbrltDNneJciImk+nSWlHRLkISvGViPc/D756UjZQ=" FechaTimbrado="2017-01-17T18:44:20" UUID="6DAC4A92-B337-4627-8760-4ED74E6DC5CB" noCertificadoSAT="00001000000202864530" version="1.0" selloSAT="q/EWQXKvE9QDibioXZpQePiArRAV/5Mkd3g5+sUDAEBWjOzzNmt1oazZfoshrPB/8U12ZjkWfm4EURmPeG++tgMNH6TmLDSfPFW57LVwHumXKaYjaN9WA0hMePW5oKRClx7BS9RdHFd85M1wOuEM/j8TRv5B1VcCBEQ3X9L4Yg4="/>
+</cfdi:Complemento>
+</cfdi:Comprobante>

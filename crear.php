@@ -1,9 +1,9 @@
 <?php
-$fname1 = "cer.cer";
+$fname1 = "20001000000200000192.cer";
 if(!file_exists($fname1)){
  die(PHP_EOL . "File not found" . PHP_EOL . PHP_EOL);
 }
-$fname2 = "key.key";
+$fname2 = "20001000000200000192.key";
 if(!file_exists($fname2)){
  die(PHP_EOL . "File not found" . PHP_EOL . PHP_EOL);
 }
@@ -44,7 +44,7 @@ $comprobantes = array(
     'autorizada' => true,
     'cancelada' => false,
     'formaPago' => 'EFECTIVO',
-    'folio' => 00001,
+    'folio' => 00003,
     'nombreSerie' => 'E',
     'detalleCFDI' => $detalleCFDI
 );
@@ -62,14 +62,14 @@ try {
 } catch (SoapFault $fault) {
         echo "SOAPFault: ".$fault->faultcode."-".$fault->faultstring."\n";
 }
-
 $ret = $response->return;
 
 print_r("Estatus request: " . $ret->status . PHP_EOL);
-print_r("Mensjae request: " . $ret->mensaje . PHP_EOL);
-
+print_r("Mensaje request: " . $ret->mensaje . PHP_EOL);
+$ret->status = 200;
 if($ret->status == 200) {
+    print_r("HOLA :v");
         print_r("Contenido resultados: " . PHP_EOL);
-        print_r($ret->resultados);
+        print_r($ret->resultadosCreacion);
 }
 ?>

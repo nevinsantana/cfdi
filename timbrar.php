@@ -31,11 +31,14 @@ try {
 
 $ret = $response->return;
 
-print_r("Estatus request: " . $ret->status . PHP_EOL);
-print_r("Mensjae request: " . $ret->mensaje . PHP_EOL);
+/*print_r("Estatus request: " . $ret->status . PHP_EOL);
+print_r("<br><br>Mensjae request: " . $ret->mensaje . PHP_EOL);*/
 
 if($ret->status == 200) {
-        print_r("Contenido resultados: " . PHP_EOL);
-        print_r($ret->resultados);
+
+        print_r("<strong>cadenaOriginal: </strong>".$ret->resultados->cadenaOriginal."<br><br>");
+        print_r("<strong>certificadoSAT: </strong>".$ret->resultados->certificadoSAT."<br><br>");
+        print_r("<strong>qrCode: </strong>".$ret->resultados->qrCode."<br><br>");
+        print_r("<strong>selloSAT: </strong>".$ret->resultados->selloSAT);
 }
 ?>

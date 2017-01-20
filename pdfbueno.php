@@ -26,8 +26,10 @@ Porfavor note:
     acorde al webservice que se esté conectando.*/
 try {
         $client = new SoapClient("https://testing.solucionfactible.com/ws/services/CFDI?wsdl");
-        $params = array('usuario' => $usuario, 'password' => $password, 'cfdiBase64'=>$b64, 'zip'=>False);
+       /* $params = array('usuario' => $usuario, 'password' => $password, 'cfdiBase64'=>$b64, 'zip'=>False);*/
         $response = $client->__soapCall('generarPDF', array(
+            'usuario' => $usuario,
+            'password' => $password,
             'diseno' => $diseno,
             'uuid' => $uuid,
             'serie' => $serie
@@ -40,7 +42,7 @@ $ret = $response->return;
 
 print_r("Estatus request: " . $ret->status . PHP_EOL);
 print_r("Mensjae request: " . $ret->mensaje . PHP_EOL);
-print_r("Nombre: " . $ret->nombre . PHP_EOL);
+print_r("Nombre: " . $ret->pdf . PHP_EOL);
 
 if($ret->status == 200) {
         print_r("Contenido resultados: " . PHP_EOL);

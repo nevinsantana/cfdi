@@ -1,6 +1,6 @@
 <?php
 
-$fname = "cfdis/e11b39ee-0067-46a9-a1d6-2a6787bbddb4.xml";
+$fname = "a.xml";
 if(!file_exists($fname)){
  die(PHP_EOL . "File not found" . PHP_EOL . PHP_EOL);
 }
